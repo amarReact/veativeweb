@@ -6,33 +6,200 @@
   height: 40vmin;
   pointer-events: none;
 }
+*{ margin:0px; padding:0px; list-style: none; border:0px; outline: 0;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.headerDiv{ background: #010101; padding: 13px 40px 0px 40px; width: 100%; position: fixed; left: 0px; top: 0px; z-index: 2;}
+.headerDiv .nabbardvIn ul{ flex-wrap: wrap; display: flex; margin: 0px;}
+.headerDiv .nabbardvIn ul li{ color: #fff; padding: 0 2px; list-style: none;}
+.headerDiv .nabbardvIn ul li svg{ margin-right: 10px;}
+.headerDiv .nabbardvIn ul li a{ font-weight: 700; font-size: 20px; color: #fff; position: relative; 
+  padding: 0 15px 20px 15px; float: left;}
+.logodiv{ margin-top: 10px; float: left;}
+.headerDiv .nabbardvIn ul li a:hover{ text-decoration: none;}
+.headerDiv .nabbardvIn ul li a:after{ width: 0%; content: ""; position: absolute; left: 0px; bottom: 0px; background-color: #fff; height: 5px; transition: all 0.5s ease-in-out 0s;}
+.headerDiv .nabbardvIn ul li a:hover::after{ width: 100%;transition: all 0.5s ease-in-out 0s; }
+.headerDiv .nabbardv{ padding: 10px 0 0px 0;}
+.tryBtn{ height: 38px; background: #d0d0d0; float: left; font-weight: 700; font-size: 20px; display: flex; width: 165px; align-items: center; justify-content: center; color: #fff; border-radius: 5px; padding: 0px; margin-top: 6px;}
+.tryBtn:hover{ text-decoration: none; color: #fff; }
+.clickUserbtnIn span{ display: flex; align-items: flex-start; justify-content: center; float: left; width: 48px; height: 48px; border-radius: 50%; background-color: #fff; font-size: 30px; color: #333; font-weight: 700; }
+.clickUserbtnIn:focus{ outline: 0; box-shadow: 0 0 0 #fff!important;}
 
-.App-link {
-  color: #61dafb;
-}
+.headerDiv .clickUserbtn { width: 154px; float: right; position:relative; padding: 0 0px 0 0; border:0px; outline: 0;}
+.headerDiv .clickUserbtnIn{ width: 100%; padding: 0px; border: 0px; position: relative; padding-right: 30px;}
+.dropdowns{ width: 322px; background-color: #fff; position: absolute; right: 0px; top: 59px; border-radius: 0 0 10px 10px; box-shadow: 0 0 10px #ddd; padding: 0 0 37px 0 ; border:1px solid #ececec; }
+.dropdowns ul li{ border-bottom: 1px solid #a1a1a1; padding: 13px 0 13px 35px; font-weight: 700; font-size: 30px; cursor: pointer;}
+.logoutBtn{ margin: 35px 10% 0 10%; height: 50px; width: 80%; border:2px solid #1c2426; background-color: #1c2426; border-radius: 5px; display: flex; align-items: center; justify-content: center; font-size: 25px; color: #fff; font-weight: 700;  }
+.logoutBtn:hover{ text-decoration: none;background-color: #fff; color: #333;}
+.clickUserbtnIn b{ color: #fff; font-weight: 400; font-size: 20px; float: right; margin: 10px 0 0 0;}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.btn-link.focus, .btn-link:focus{ text-decoration: none; box-shadow: 0 0 0 #fff; }
+.headerDiv .clickUserbtnIn svg {  position: absolute;  right: 0px;
+  top: 14px;  font-size: 24px;  color: #fff;}
+
+  .bannerDiv{  background-image: linear-gradient(to left, #242424 , #737373); width: 100%; min-height: 492px;      display: flex;    align-items: center;    justify-content: flex-start;  padding: 85px 0 0 0;   flex-direction: column;} 
+  .bannerDiv h2{ font-weight: 700; color: #fff; font-size: 45px;}
+  .bannerDiv h2 svg{ font-size: 20px; margin: 0 0 0 5px;}
+  .bannerDiv .awords{ display: flex; align-items: center;    justify-content: center; margin-top: 15px; }
+  .bannerDiv .awords li {    border-radius: 50%;    border: 2px solid #fff; width: 40px;height: 40px; color: #fff;  font-size: 25px; display: flex;  align-items: center; justify-content: center; margin: 0 6px; cursor: pointer;}
+  .showAword{ font-weight: 700; color: #fff; font-size: 18px;}
+  .middlediv{ margin:-95px auto auto auto; width: 1111px;}
+  .carrerDiv{ float: left; width: 100%; box-shadow: 0 0 10px#ddd; border-radius: 5px; padding:40px  26px; background: #fff; border-radius: 5px; }
+
+  .leftacrr{ float: left; width: 50%; text-align: center;}
+  .leftacrr h2{ font-size: 41px; font-weight: 700; text-transform: uppercase; padding-bottom: 15px;}
+  .rightcarr{ float: left; width: 50%; display: flex; align-items: center; flex-wrap: wrap;     justify-content: center; padding-left: 30px; padding-top: 25px;}
+  .leftacrr .expclass{ width: 380px; height: 52px; border: 2px solid #929697; border-radius: 5px; display: flex; text-transform: uppercase; color: #333; font-weight: 700; font-size: 20px;     align-items: center;
+    justify-content: center; margin: 30px auto auto  auto;}
+    .leftacrr .expclass:hover{ text-decoration: none; background-color: #333; color: #fff;}
+    .leftacrr .expclass svg{ font-weight: 700; font-size: 35px;}
+
+    .middlediv .globalBtn{ border-radius: 30px; border: 1px solid #878787; height: 60px; display: flex;  align-items: center; justify-content: center; font-weight: 700; text-transform: uppercase; font-size: 18px; width: 218px; color: #333;}
+    .middlediv .globalBtn:hover{ background-color: #333; color: #fff; text-decoration: none;}
+    .middlediv .globalBtn:focus{ outline: 0; box-shadow: 0 0 0 #fff;}
+    .wrapBtn{  width: 100%; display: flex; flex-wrap: wrap;}
+    .wrapBtn .globalBtn { margin-left: 22px; margin-bottom: 10px;}
+
+    .passportdiv{ width: 100%; display: flex; justify-content: space-between; margin: 20px 0; float: left;}
+    .passportleft{ float: left; width: 742px; background-color: #fff; box-shadow: 0 0 10px#ddd; padding: 25px; border-radius: 5px;}
+    .passportright{ width: 358px;background-color: #fff; box-shadow: 0 0 10px#ddd; padding: 20px; border-radius: 5px; display: flex; flex-wrap: wrap; justify-content: center; }
+   
+
+    .passportleft aside p{ font-size: 18px; text-align: center;}
+    .passportleft aside{ display: flex; align-items: center; justify-content: space-around;}
+    .passportleft .globalBtn{ width: 261px; height: 45px; margin-bottom: 15px;}
+
+    .passportdiv h2{font-size: 30px; font-weight: 700; text-transform: uppercase; padding-bottom: 25px; text-align:center;}
+    .passportdiv h2 svg{ font-size: 20px;}
+    .passportright aside{ width: 190px; height: 190px; border-radius: 50%; border: 1px solid #333;     display: flex;      align-items: center;      justify-content: center;}
+    .passportright aside svg{ font-size: 130px;}
+    .passportright p{ text-align: center; padding-top: 15px;}
+
+    .carpasDiv{ width: 100%; background-color: #fff; box-shadow: 0 0 10px#ddd; padding: 0px; border-radius: 5px; margin: 0 0 20px 0; float: left;}
+
+    .carpasDivIn{ float: left; width: 496px; padding: 20px; display: flex; align-items: center; flex-direction: column;}
+    .lettname{ float: right; width: 610px; position: relative;}
+    .carpasDivIn h2{font-size: 40px; font-weight: 700; text-transform: uppercase; padding-bottom: 15px; text-align:center;}
+    .carpasDivIn p{ text-align: center;}
+    .setPas{ color: #333; text-transform: uppercase; font-size: 18px; margin: auto;}
+    .setPas:hover{ text-decoration: none; color:#000;}
+
+    .footerDiv{ float: left; width: 100%; background-color: #111111; position: relative; padding-top: 57px; padding-bottom: 45px;}
+
+    .footerDiv .footerMiddle{ margin: auto; width:1111px;}
+    .footerMiddle p{ font-weight: 700; color: #fff; font-size: 18px; margin: 0 0 10px 0;}
+    .footerMiddle ul{ flex-direction: column; padding-bottom: 25px; }
+    .footerMiddle ul li{ padding-top: 5px;}
+    .footerMiddle ul li a{ padding: 0px; color: #fff; font-size: 13px;}
+    .footerMiddle ul li a:hover{ text-decoration: underline;}
+
+    .dotloop{ float: left; width: 100%; height: 173px; margin-top: 40px; margin-bottom: -50px; transform: rotate(-2deg); }
+    #root{ overflow: hidden;}
+
+    .headerDiv:after{ content: ""; position: absolute; left: 0px; bottom: 0px; width: 0%; height: 1px; background-color: #999; transition: all 0.5s ease-in-out 0s;}
+    .headerDiv.scroll:after{ width: 100%; transition: all 0.5s ease-in-out 0s;}
+    /* .headerDiv.scroll img{ max-width: 130px; } */
+    /* .headerDiv.scroll .nabbardvIn ul li a{ font-size: 15px;} */
+
+    .bannerDiv .awords li.disable{ opacity: 0.5; pointer-events: none;}
+
+    .footerMiddle .blogdiv li{ width: 100%; background-color: #0f0f0f; border-right: 4px solid #78aa42; padding: 5px 15px; margin-bottom: 10px; }
+    .footerMiddle .blogdiv li a{ display: block; width: 100%; border-bottom: 1px solid #222222; padding: 0 0 10px 0; display: block;} 
+    .footerMiddle .blogdiv li a:hover{ text-decoration: none;}
+    .footerMiddle .blogdiv li a:hover{ color:#eee}
+
+    .scrolltop {      position: fixed;      right: 5px;      bottom: 5px;      color: #fff;
+      font-size: 25px;      background: #78aa42;      border-radius: 5px; cursor: pointer;  }
+
+      .lettname aside{ width: 90px; height: 90px; background-color: #d5d5d5; display: flex; align-items: center; justify-content: center; font-size: 18px; text-transform: uppercase; position: absolute; right: 15px; top: 15px; border-radius: 50%;}
+      .headerDiv .row{ justify-content: space-between;}
+      .clickmenu{ display: none;}
+
+      @media (max-width:1450px){
+        .headerDiv .col-3{max-width: inherit; flex: 0 0 auto; float: right; width: 330px;}
+        .headerDiv .col-2{max-width: inherit; flex: 0 0 auto; float: right; width: inherit;}
+        .tryBtn{ float: left;}
+        .tryBtn{ font-size: 18px; width: auto; padding-left: 10px; padding-right: 10px;}
+        .headerDiv .nabbardvIn ul li a{ padding-left:10px; padding-right:10px;}
+        .headerDiv{ padding: ;}
+      }
+      @media (max-width:1320px){
+        .headerDiv .nabbardvIn ul li a{ font-size: 16px;}
+        .headerDiv .col-7{max-width: inherit; flex: 0 0 auto; float: right; width: auto; }
+      }
+
+      @media (max-width:1200px){
+        .tryBtn{ font-size: 14px; height: 25px; margin-right: 10px; margin-top: 4px;}
+        .clickUserbtnIn span{ font-size: 18px; width: 30px; height: 30px; margin: 0 5px 0 0;}
+        .clickUserbtnIn b{ font-size: 14px; margin-top: 4px;}
+        .headerDiv .clickUserbtnIn{ padding-right: 20px;}
+        .headerDiv .clickUserbtnIn svg{ top: 8px;}
+        .headerDiv .clickUserbtn{ width: auto;}
+        .headerDiv .col-3{ width: auto;}
+        .headerDiv .clickUserbtnIn svg{ font-size: 16px; top:8pxs;}
+        .headerDiv{ padding-top: 5px;}
+        .logodiv{ margin-top: 5px;}
+        .headerDiv .nabbardv{ padding-top: 5px;}
+        .headerDiv .nabbardvIn ul li a{ padding-bottom: 10px;}
+        .logodiv img{ max-width: 130px;}
+        .dropdowns{ width: 200px; padding-bottom: 10px; top:39px}
+        .dropdowns ul li{ padding: 5px 15px; font-size: 15px;}
+        .headerDiv .nabbardvIn ul li a::after{ height: 2px;}
+        .logoutBtn{ width: 90%; margin: 0 5%; font-size: 15px; height: 30px;}
+      }
+
+      @media (max-width:1110px){
+         .middlediv{ width: 100%; padding:  0 25px;}
+         .footerDiv .footerMiddle{width: 100%; }
+        .carpasDivIn h2,.leftacrr h2{ font-size: 30px;}
+        .leftacrr{ width: 50%;}
+        .rightcarr{ width: 50%;}
+        .middlediv .globalBtn{ height: 40px; width: 48%; margin: 5px 1%;}
+        .passportleft .globalBtn{ width: 100%; margin: 10px 0;}
+        .passportleft aside hgroup{ width: 100%; padding: 0 10px;}
+        .carpasDivIn{ width: 50%;}
+        .lettname{ width: 50%;}
+        .lettname img{ max-width: 100%; height: auto;}
+        .clickmenu{ font-size: 25px; color: #fff; display: block; cursor: pointer;}
+        .headerDiv .nabbardv{ position: relative; padding: 0px; top:-4px;}
+        .headerDiv .col-7{ position: absolute; left: 0px;top:0px}
+        .headerDiv .col-2{ margin-left: 40px;}
+        .headerDiv{ padding-bottom: 5px;}
+        .nabbardvIn {  width: 100%; position: absolute;  left: 0px; top: 45px;
+          background: #333;  width: 220px; }
+          .clickmenu svg{ color: #fff;}    
+          .headerDiv .nabbardvIn ul li{ width: 100%; padding: 0px; margin: 0px; border-bottom: 1px solid #444;}      
+          .headerDiv .nabbardvIn ul li a{ width: 100%; padding: 5px 10px; margin: 0px;}
+          .headerDiv .nabbardvIn ul li a::after{ display: none}
+          .passportright{ margin-left: 10px;}
+      }
+
+      @media (max-width:900px){
+         .leftacrr{ width: 100%;}
+        .rightcarr{ padding: 30px 0 0 0; width: 100%;}
+        .passportleft{ padding: 30px 0 0 0; width: 100%;}
+        .passportdiv{ flex-wrap: wrap; display: block;}
+        .passportright{ padding: 30px 0 0 0; width: 100%; margin: 20px 0px 0px 0px; float: left;}
+        .passportright aside{ margin: auto;}
+        .passportright{ display: flex; flex-direction: column;}
+        .carpasDivIn{ width: 100%;}
+        .lettname{ width: 100%; text-align: center; padding-bottom: 25px;}
+        .dropdowns{ top: 35px;}
+        .footerMiddle .col-3 { max-width: 50%;  flex: 0 0 50%;      }
+        .middlediv .globalBtn{ font-size: 12px;}
+        .bannerDiv h2{ font-size: 35px;}
+        .passportdiv h2, .carpasDivIn h2, .leftacrr h2{ font-size: 20px;}
+        .leftacrr .expclass{ font-size: 14px; width: auto;}
+        .passportright p{ padding: 5px;}
+      }
+
+      @media (max-width:450px){
+        .tryBtn{ display: none;}
+        .bannerDiv h2{ font-size: 25px;}
+      }
+      @media (max-width:400px){
+        .footerMiddle .col-3 { max-width: 100%;  flex: 0 0 100%;      }
+        .setPas{ font-size: 14px;}
+        .carpasDivIn p{ font-size: 14px;}
+        .passportright p{ font-size: 14px;}
+      }
